@@ -2,10 +2,10 @@
   --bg-dark: #0a0e27;
   --bg-secondary: #141829;
   --bg-tertiary: #1a1f3a;
-  --accent-crimson: #E63946;
-  --accent-crimson-dark: #C41E3A;
-  --accent-blue: #5B7EFF;
-  --accent-blue-dark: #4169E1;
+  --accent-crimson: #A01A28;
+  --accent-crimson-dark: #7A1220;
+  --accent-blue: #3A52CC;
+  --accent-blue-dark: #2E3F99;
   --text-primary: #f5f7ff;
   --text-secondary: #b8c5e0;
   --text-muted: #7a89a8;
@@ -234,7 +234,7 @@ strong {
 
 .project-card:hover {
   border-color: var(--accent-crimson);
-  box-shadow: 0 0 20px rgba(230, 57, 70, 0.2);
+  box-shadow: 0 0 20px rgba(160, 26, 40, 0.25);
 }
 
 .project-header {

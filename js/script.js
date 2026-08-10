@@ -160,7 +160,7 @@ style.textContent = `
     max-height: 80vh;
     overflow-y: auto;
     width: 90%;
-    box-shadow: 0 20px 60px rgba(230, 57, 70, 0.2);
+    box-shadow: 0 20px 60px rgba(160, 26, 40, 0.2);
   }
 
   .modal-header {
@@ -168,12 +168,12 @@ style.textContent = `
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    border-bottom: 2px solid var(--accent-crimson, #E63946);
+    border-bottom: 2px solid var(--accent-crimson, #A01A28);
   }
 
   .modal-header h3 {
     margin: 0;
-    color: var(--accent-crimson, #E63946);
+    color: var(--accent-crimson, #A01A28);
     font-size: 1.25rem;
   }
 
@@ -193,7 +193,7 @@ style.textContent = `
   }
 
   .modal-close:hover {
-    color: var(--accent-crimson, #E63946);
+    color: var(--accent-crimson, #A01A28);
   }
 
   .modal-body {
@@ -218,7 +218,7 @@ style.textContent = `
     margin: 0;
     font-family: 'Courier New', monospace;
     font-size: 0.9rem;
-    color: var(--accent-crimson, #E63946);
+    color: var(--accent-crimson, #A01A28);
     line-height: 1.5;
   }
 
@@ -231,11 +231,11 @@ style.textContent = `
   }
 
   .demo-note a {
-    color: var(--accent-blue, #5B7EFF);
+    color: var(--accent-blue, #3A52CC);
   }
 
   .demo-note a:hover {
-    color: var(--accent-crimson, #E63946);
+    color: var(--accent-crimson, #A01A28);
   }
 `;
 document.head.appendChild(style);
