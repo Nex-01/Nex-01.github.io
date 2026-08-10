@@ -4,6 +4,7 @@
   --bg-tertiary: #1a1f3a;
   --accent-cyan: #00d9ff;
   --accent-green: #00ff88;
+  --accent-green-dark: #00cc66;
   --text-primary: #e8ecf1;
   --text-secondary: #a8b2bf;
   --text-muted: #6b7280;
@@ -24,6 +25,8 @@ html {
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background-color: var(--bg-dark);
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2300ff88' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
   color: var(--text-primary);
   line-height: 1.6;
   font-size: 16px;
@@ -62,7 +65,10 @@ h1, h2, h3 {
 
 h1 {
   font-size: 2.5rem;
-  color: var(--accent-cyan);
+  background: linear-gradient(90deg, var(--accent-green) 0%, var(--accent-cyan) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 h2 {
@@ -105,7 +111,7 @@ strong {
 .nav-brand {
   font-size: 1.3rem;
   font-weight: 700;
-  color: var(--accent-cyan);
+  color: var(--accent-green);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -171,23 +177,23 @@ strong {
 }
 
 .btn-primary {
-  background-color: var(--accent-cyan);
+  background-color: var(--accent-green);
   color: var(--bg-dark);
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-green);
+  background-color: var(--accent-green-dark);
   color: var(--bg-dark);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--accent-cyan);
-  border: 1px solid var(--accent-cyan);
+  color: var(--accent-green);
+  border: 1px solid var(--accent-green);
 }
 
 .btn-secondary:hover {
-  background-color: var(--accent-cyan);
+  background-color: var(--accent-green);
   color: var(--bg-dark);
 }
 
@@ -226,8 +232,8 @@ strong {
 }
 
 .project-card:hover {
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 20px rgba(0, 217, 255, 0.1);
+  border-color: var(--accent-green);
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.15);
 }
 
 .project-header {
@@ -241,6 +247,7 @@ strong {
 .project-card h3 {
   flex: 1;
   margin-bottom: 0;
+  color: var(--accent-green);
 }
 
 .tag {
@@ -264,13 +271,13 @@ strong {
 
 .highlight {
   background-color: var(--bg-secondary);
-  border-left: 2px solid var(--accent-cyan);
+  border-left: 3px solid var(--accent-green);
   padding: 1rem;
   border-radius: 4px;
 }
 
 .highlight strong {
-  color: var(--accent-cyan);
+  color: var(--accent-green);
   display: block;
   margin-bottom: 0.5rem;
 }
@@ -347,7 +354,7 @@ strong {
 
 .lab-intro {
   background-color: var(--bg-secondary);
-  border-left: 3px solid var(--accent-cyan);
+  border-left: 3px solid var(--accent-green);
   padding: 2rem;
   border-radius: 4px;
   margin-bottom: 2rem;
