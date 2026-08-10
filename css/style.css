@@ -31,16 +31,52 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+body::before {
+  background: linear-gradient(90deg, 
+    rgba(0, 0, 0, 0.7) 0%, 
+    rgba(0, 0, 0, 0.7) calc(50% - 200px), 
+    #0a0a0a calc(50% - 200px), 
+    #0a0a0a calc(50% + 200px), 
+    rgba(0, 0, 0, 0.7) calc(50% + 200px), 
+    rgba(0, 0, 0, 0.7) 100%);
+}
+
+@media (max-width: 768px) {
+  body::before {
+    background: linear-gradient(90deg, 
+      rgba(0, 0, 0, 0.7) 0%, 
+      rgba(0, 0, 0, 0.7) calc(50% - 100px), 
+      #0a0a0a calc(50% - 100px), 
+      #0a0a0a calc(50% + 100px), 
+      rgba(0, 0, 0, 0.7) calc(50% + 100px), 
+      rgba(0, 0, 0, 0.7) 100%);
+  }
 }
 
 a {
-  color: var(--accent-crimson);
+  color: var(--accent-blue);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--accent-blue);
+  color: var(--accent-crimson);
 }
 
 code {
@@ -75,6 +111,11 @@ h1 {
 h2 {
   font-size: 2rem;
   color: var(--text-primary);
+  background: linear-gradient(90deg, transparent 0%, var(--bg-secondary) 15%, var(--bg-secondary) 85%, transparent 100%);
+  padding: 1rem 0;
+  margin-bottom: 2.5rem;
+  border-top: 2px solid var(--accent-blue);
+  border-bottom: 2px solid var(--accent-crimson);
 }
 
 h3 {
