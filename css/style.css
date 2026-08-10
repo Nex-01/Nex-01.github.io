@@ -65,14 +65,14 @@ a {
   color: var(--accent-crimson);
   text-decoration: none;
   transition: all 0.2s ease;
-  border: 1px solid white;
-  padding: 2px 4px;
-  display: inline-block;
+  -webkit-text-stroke: 1px white;
+  text-stroke: 1px white;
 }
 
 a:hover {
   color: var(--accent-blue);
-  border-color: var(--accent-blue);
+  -webkit-text-stroke: 1px var(--accent-blue);
+  text-stroke: 1px var(--accent-blue);
 }
 
 code {
@@ -110,11 +110,6 @@ h1 {
 h2 {
   font-size: 2rem;
   color: var(--text-primary);
-  background: linear-gradient(90deg, transparent 0%, var(--bg-secondary) 15%, var(--bg-secondary) 85%, transparent 100%);
-  padding: 1rem 0;
-  margin-bottom: 2.5rem;
-  border-top: 2px solid var(--accent-blue);
-  border-bottom: 2px solid var(--accent-crimson);
 }
 
 h3 {
@@ -254,7 +249,7 @@ strong {
 }
 
 .section h2 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 /* Projects Grid */
