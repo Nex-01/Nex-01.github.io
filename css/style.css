@@ -65,14 +65,10 @@ a {
   color: var(--accent-crimson);
   text-decoration: none;
   transition: all 0.2s ease;
-  -webkit-text-stroke: 1px white;
-  text-stroke: 1px white;
 }
 
 a:hover {
   color: var(--accent-blue);
-  -webkit-text-stroke: 1px var(--accent-blue);
-  text-stroke: 1px var(--accent-blue);
 }
 
 code {
