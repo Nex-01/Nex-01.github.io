@@ -26,57 +26,6 @@ Nex-01.github.io/
     └── Search-ADUsersByCompany.ps1  # Demo: AD user search utility
 ```
 
-## Setup & Deployment
-
-### Option 1: GitHub Pages (Recommended)
-
-1. **Create a new repository** named `Nex-01.github.io` (replace `Nex-01` with your GitHub username)
-
-2. **Clone the repo locally:**
-   ```bash
-   git clone https://github.com/Nex-01/Nex-01.github.io.git
-   cd Nex-01.github.io
-   ```
-
-3. **Add all files from this portfolio:**
-   - Copy `index.html` to the root
-   - Create `css/` folder and add `style.css`
-   - Create `js/` folder and add `script.js`
-   - Create `demo-scripts/` folder and add PowerShell scripts
-
-4. **Update GitHub links** in the HTML:
-   - Replace `https://github.com/Nex-01/powershell-scripts` with your actual repo URL
-   - Replace LinkedIn URL (search for `linkedin.com` in `index.html`)
-
-5. **Commit and push:**
-   ```bash
-   git add .
-   git commit -m "Initial portfolio commit"
-   git push origin main
-   ```
-
-6. **Enable GitHub Pages:**
-   - Go to your repo settings → Pages
-   - Select "Deploy from a branch"
-   - Choose `main` branch and `/root` folder
-   - Your site will be live at `https://Nex-01.github.io`
-
-### Option 2: Local Testing
-
-1. **Serve locally** using Python:
-   ```bash
-   python -m http.server 8000
-   ```
-   Then visit `http://localhost:8000`
-
-2. Or use VS Code's Live Server extension
-
-## Customization
-
-### Update Contact Links
-- **GitHub:** Search for `github.com/Nex-01` and update
-- **LinkedIn:** Search for `linkedin.com` and add your profile URL
-
 ### Modify Hero Projects
 Edit the `<section id="projects">` in `index.html`:
 - Change project titles and descriptions
@@ -123,13 +72,4 @@ Edit CSS variables in `css/style.css` (`:root` section):
 
 ## License
 
-Built by Nex-01 for personal portfolio use.
-
----
-
-**Next steps:**
-1. Create the `Nex-01.github.io` repo on GitHub
-2. Push these files
-3. Enable GitHub Pages
-4. Update contact links
-5. Share with hiring managers and colleagues!
+Built by Nex-01 for personal portfolio
