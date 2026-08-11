@@ -249,6 +249,12 @@ strong {
   background-color: rgba(26, 47, 74, 0.3);
 }
 
+#about .container {
+  background-color: var(--bg-tertiary);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
 .section h2 {
   margin-bottom: 2rem;
 }
