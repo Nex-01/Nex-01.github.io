@@ -238,6 +238,7 @@ strong {
   border-bottom: 1px solid var(--border-color);
   position: relative;
   z-index: 2;
+  background-color: transparent;
 }
 
 .section-alt {
