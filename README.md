@@ -4,12 +4,12 @@ A clean, dark-themed portfolio site built with vanilla HTML, CSS, and JavaScript
 
 ## Features
 
-- **Dark cybersecurity aesthetic** — Dark blue background with cyan and green accents
-- **Responsive design** — Works on desktop, tablet, and mobile
-- **Hero projects** — Featured sections for PowerShell scripts, home lab, and systems automation
-- **Skills showcase** — Cloud, scripting, security, and tools categorized
-- **Lab in progress** — Dedicated section for active cybersecurity lab development
-- **Interactive demos** — Script examples with modal popups linking to full GitHub repos
+- **Dark cybersecurity aesthetic** - Dark blue background with cyan and green accents
+- **Responsive design** - Works on desktop, tablet, and mobile
+- **Hero projects** - Featured sections for PowerShell scripts, home lab, and systems automation
+- **Skills showcase** - Cloud, scripting, security, and tools categorized
+- **Lab in progress** - Dedicated section for active cybersecurity lab development
+- **Interactive demos** - Script examples with modal popups linking to full GitHub repos
 
 ## Project Structure
 
